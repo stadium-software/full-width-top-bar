@@ -8,8 +8,12 @@
     & .split-flex {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding-right: 30px;
+        padding: 0 30px;
+        justify-content: center;
+
+        & .control-container:last-child {
+            margin-left: auto;
+        }
     }
 
     & .container {

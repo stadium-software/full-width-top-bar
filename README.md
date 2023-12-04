@@ -18,6 +18,7 @@ Making the first row of any page stretch across the entire viewport makes applic
 1. Dragging a *Menu* control into the first row will cause that menu to be shown integrated with the top bar (use *LeftToRight* display)
 2. The position of the profile icon can be adjusted in the [*top-bar-variables.css*](top-bar-variables.css) file (see below)
 3. Adding the class "fixed-top-bar" to the control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
+4. When the first control on the page is a *Flexbox* control, you can additionally add the class "split-flex" to that flexbox control to make the last element in that control display on the right-hand side of the top bar
 
 # Styling
 The background color can be changed using the two CSS files in this repo
