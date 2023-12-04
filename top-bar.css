@@ -1,0 +1,87 @@
+/*---Full Top Bar---*/
+
+#app:has(.stadium-top-bar) {
+    & .header {
+        top: var(--stadium-full-top-bar-profile-icon-top-position);
+        right: var(--stadium-full-top-bar-profile-icon-right-position);
+    }
+
+    & .container {
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    & .split-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    & .page-content {
+        display: block;
+    }
+
+    & .container > .stack-layout-container:first-child:has(.stadium-top-bar) {
+        background-color: var(--stadium-full-top-bar-background-color);
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+
+        & nav.menu-container {
+            border-radius: 0;
+            box-shadow: none;
+            margin-top: 0;
+        }
+    }
+
+    & .container > .stack-layout-container:first-child:has(.stadium-top-bar.fixed-top-bar) {
+        position: fixed;
+        z-index: 999;
+    }
+
+    & .container:has(.stadium-top-bar.fixed-top-bar) > .stack-layout-container:nth-child(2) {
+        padding-top: var(--stadium-full-top-bar-profile-fixed-top-padding);
+    }
+
+    & .container:has(.stadium-top-bar) > .stack-layout-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &:has(.page-content) {
+
+        & .container:has(.stadium-top-bar) > .stack-layout-container {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        & .page-content > .stack-layout-container:first-child:has(.stadium-top-bar) {
+            background-color: var(--stadium-full-top-bar-background-color);
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+
+            & nav.menu-container {
+                border-radius: 0;
+                box-shadow: none;
+                margin-top: 0;
+            }
+        }
+
+        & .page-content > .stack-layout-container:first-child:has(.stadium-top-bar.fixed-top-bar) {
+            position: fixed;
+            z-index: 999;
+        }
+
+        & .page-content:has(.stadium-top-bar.fixed-top-bar) > .stack-layout-container:nth-child(2) {
+            padding-top: var(--stadium-full-top-bar-profile-fixed-top-padding);
+        }
+
+        & .page-content:has(.stadium-top-bar) > .stack-layout-container {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}

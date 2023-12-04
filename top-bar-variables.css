@@ -1,0 +1,7 @@
+:root {
+    --stadium-full-top-bar-background-color: #2196f3;
+
+    --stadium-full-top-bar-profile-icon-top-position: 6px;
+    --stadium-full-top-bar-profile-icon-right-position: 4px;
+    --stadium-full-top-bar-profile-fixed-top-padding: 60px;
+}
