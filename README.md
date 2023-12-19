@@ -19,12 +19,11 @@ This module allows you to make the first row of any page stretch across the enti
 **Example showing a menu:**
 ![Menu Example](images/menu-view.png)
 
-## Display Options
-1. Dragging a *Menu* control into the first row will cause that menu to be shown integrated with the top bar (use *LeftToRight* display)
-2. Adding the class "fixed-top-bar" to the control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
+## Display Option: Fixed Top Bar
+1. Adding the class "fixed-top-bar" to the menu control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
 
 **Example showing a fixed top bar:**
-![Fixed Top Bar Example](images/split-flex-fixed.gif)
+![Fixed Top Bar Example](images/fixed-top-bar.gif)
 
 ## Multiple Menu Display (left-aligned & right-aligned)
 1. Drag a *Flexbox* control into the first row
@@ -36,7 +35,7 @@ This module allows you to make the first row of any page stretch across the enti
 ![Split Menu Display](images/right-hand-menu.png)
 
 # Styling
-The *background color* of the top bar and the *position of the profile icon* can be changed using the two CSS files in this repo
+The **background color** of the top bar and the **position of the profile icon** can be changed using the two CSS files in this repo
 
 ## Applying the CSS
 
