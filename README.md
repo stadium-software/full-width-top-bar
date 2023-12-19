@@ -1,6 +1,6 @@
 # Full-Width TopBar
 
-Making the first row of any page stretch across the entire viewport makes applications look slicker. Here is some CSS to make this happen
+This module allows you to make the first row of any page stretch across the entire viewport
 
 ## Version 
 1.0 - initial
@@ -11,12 +11,14 @@ Making the first row of any page stretch across the entire viewport makes applic
 1. Check the *Enable Style Sheet* checkbox in the application properties
 
 ## Page Setup
-1. Drag any control to a page
-2. Add the class "stadium-top-bar" to the classes property
+1. Drag any control to a page (e.g. a *Menu* control)
+2. Add the class "stadium-top-bar" to the classes property of the control
+3. Include the CSS files below
+4. The first row of the page will now stretch the viewport. The menu control will be integrated with the top bar
 
-![](images/plain-menu.png)
+![Menu Example](images/plain-menu.png)
 
-## Options / Notes
+## Usage Suggestions
 1. Dragging a *Menu* control into the first row will cause that menu to be shown integrated with the top bar (use *LeftToRight* display)
 2. The position of the profile icon can be adjusted in the [*top-bar-variables.css*](top-bar-variables.css) file (see below)
 3. Adding the class "fixed-top-bar" to the control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
