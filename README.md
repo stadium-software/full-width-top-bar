@@ -14,20 +14,29 @@ This module allows you to make the first row of any page stretch across the enti
 1. Drag any control to a page (e.g. a *Menu* control)
 2. Add the class "stadium-top-bar" to the classes property of the control
 3. Include the CSS files below
-4. The first row of the page will now stretch the viewport. The menu control will be integrated with the top bar
+4. The first row of the page will now stretch the viewport. The menu control will be integrated with the top bar.
 
+**Example showing a menu:**
 ![Menu Example](images/plain-menu.png)
 
-## Usage Suggestions
+## Display Options
 1. Dragging a *Menu* control into the first row will cause that menu to be shown integrated with the top bar (use *LeftToRight* display)
-2. The position of the profile icon can be adjusted in the [*top-bar-variables.css*](top-bar-variables.css) file (see below)
-3. Adding the class "fixed-top-bar" to the control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
-![](images/split-flex.gif)
-4. When the first control on the page is a *Flexbox* control, you can additionally add the class "split-flex" to that flexbox control to make the last element in that control display on the right-hand side of the top bar
-![](images/split-flex-fixed.gif)
+2. Adding the class "fixed-top-bar" to the control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
+
+**Example showing a fixed top bar:**
+![Fixed Top Bar Example](images/split-flex.gif)
+
+## Multiple Menu Display (left-aligned & right-aligned)
+1. Drag a *Flexbox* control into the first row
+2. Add the class "split-flex" to that flexbox control
+3. Drag two menu controls into the *Flexbox* control
+4. The first menu will be aligned to left of the top bar, second menu will be aligned to the right-hand-side of the top bar
+
+**Example showing a split top bar with two menu controls:**
+![Split Menu Display](images/split-flex-fixed.gif)
 
 # Styling
-The background color can be changed using the two CSS files in this repo
+The *background color* of the top bar and the *position of the profile icon* can be changed using the two CSS files in this repo
 
 ## Applying the CSS
 
