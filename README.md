@@ -24,7 +24,7 @@ This module allows you to make the first row of any page stretch across the enti
 2. Adding the class "fixed-top-bar" to the control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
 
 **Example showing a fixed top bar:**
-![Fixed Top Bar Example](images/split-flex.gif)
+![Fixed Top Bar Example](images/split-flex-fixed.gif)
 
 ## Multiple Menu Display (left-aligned & right-aligned)
 1. Drag a *Flexbox* control into the first row
