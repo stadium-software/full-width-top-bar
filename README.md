@@ -20,7 +20,7 @@ This module allows you to make the first row of any page stretch across the enti
 ![Menu Example](images/menu-view.png)
 
 ## Display Option: Fixed Top Bar
-1. Adding the class "fixed-top-bar" to the menu control will cause the top bar to remain fixed at the top of the page while the remaining content will scroll
+1. Adding two classes, "stadium-top-bar" and "fixed-top-bar" to the menu control will cause the top bar stretch and also remain fixed at the top of the page while the remaining content will scroll
 
 **Example showing a fixed top bar:**
 ![Fixed Top Bar Example](images/fixed-top-bar.gif)
