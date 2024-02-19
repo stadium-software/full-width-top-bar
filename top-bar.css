@@ -1,4 +1,4 @@
-/*---Full Top Bar---*/
+/* CSS version 1.0 https: //github.com/stadium-software/full-width-top-bar */
 #app:has(.stadium-top-bar) {
     & .header {
         top: var(--stadium-full-top-bar-profile-icon-top-position);
