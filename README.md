@@ -34,10 +34,8 @@ This module allows you to make the first row of any page stretch across the enti
 **Example showing a split top bar with two menu controls:**
 ![Split Menu Display](images/right-hand-menu.png)
 
-# Styling
-The **background color** of the top bar and the **position of the profile icon** can be changed using the two CSS files in this repo
-
 ## Applying the CSS
+The CSS below is required for the correct functioning of the module. Some elements can be [customised](#customising-css) using a variables CSS file. The **background color** of the top bar and the **position of the profile icon** can be changed using the two CSS files in this repo
 
 **Stadium 6.6 or higher**
 1. Create a folder called "CSS" inside of your Embedded Files in your application
