@@ -15,17 +15,14 @@
             margin-left: auto;
         }
     }
-
     .container {
         display: block;
         padding-right: 0;
         padding-left: 0;
     }
-
     .page-content {
         display: block;
     }
-
     .container > .stack-layout-container:first-child:has(.stadium-top-bar) {
         background-color: var(--stadium-full-top-bar-background-color, var(--SECONDARY-THEME-COLOR, #2196f3));
         width: 100%;
