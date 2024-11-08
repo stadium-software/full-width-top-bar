@@ -3,7 +3,7 @@
 This module allows you to make the first row of any page stretch across the entire viewport
 
 ## Version 
-1.0 - initial
+1.1 - Allows for left-to-right menus not very at top of page
 
 # Setup
 

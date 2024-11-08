@@ -1,10 +1,10 @@
-/* CSS version 1.0 https: //github.com/stadium-software/full-width-top-bar */
-
+/* CSS version 1.1 https: //github.com/stadium-software/full-width-top-bar */
 #app:has(.stadium-top-bar) {
     .header {
         top: var(--stadium-full-top-bar-profile-icon-top-position, 6px);
         right: var(--stadium-full-top-bar-profile-icon-right-position, 4px);
     }
+
     .split-flex {
         display: flex;
         flex-direction: row;
@@ -15,15 +15,18 @@
             margin-left: auto;
         }
     }
+
     .container {
         display: block;
         padding-right: 0;
         padding-left: 0;
     }
+
     .page-content {
         display: block;
     }
-    .container > .stack-layout-container:first-child:has(.stadium-top-bar) {
+
+    .container .stack-layout-container:has(.stadium-top-bar) {
         background-color: var(--stadium-full-top-bar-background-color, var(--SECONDARY-THEME-COLOR, #2196f3));
         width: 100%;
         padding-right: 0;
@@ -36,7 +39,7 @@
         }
     }
 
-    .container > .stack-layout-container:first-child:has(.stadium-top-bar.fixed-top-bar, .fixed-top-bar .stadium-top-bar) {
+    .container .stack-layout-container:first-child:has(.stadium-top-bar.fixed-top-bar, .fixed-top-bar .stadium-top-bar) {
         position: fixed;
         z-index: 999;
         top: 0;
@@ -46,7 +49,7 @@
         padding-top: var(--stadium-full-top-bar-profile-fixed-top-padding, 60px);
     }
 
-    .container:has(.stadium-top-bar) > .stack-layout-container {
+    .container:has(.stadium-top-bar) > .stack-layout-container:not(:has(.stadium-top-bar)) {
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -84,9 +87,11 @@
             z-index: 999;
             top: 0;
         }
+
         .page-content:has(.stadium-top-bar.fixed-top-bar) > .stack-layout-container:nth-child(2) {
             padding-top: var(--stadium-full-top-bar-profile-fixed-top-padding, 60px);
         }
+
         .page-content:has(.stadium-top-bar) > .stack-layout-container {
             padding-right: 15px;
             padding-left: 15px;
