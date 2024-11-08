@@ -1,6 +1,6 @@
 # Full-Width TopBar
 
-This module allows you to make the first row of any page stretch across the entire viewport
+This module allows you to make controls stretch across the entire viewport
 
 ## Version 
 1.1 - Allows for left-to-right menus not very at top of page
@@ -14,7 +14,6 @@ This module allows you to make the first row of any page stretch across the enti
 1. Drag any control to a page (e.g. a *Menu* control)
 2. Add the class "stadium-top-bar" to the classes property of the control
 3. Include the [CSS files below](#applying-the-css)
-4. The first row of the page will now stretch the viewport. The menu control will be integrated with the top bar.
 
 **Example showing a menu:**
 ![Menu Example](images/menu-view.png)
