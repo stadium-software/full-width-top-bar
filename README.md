@@ -3,7 +3,11 @@
 This module allows you to make controls stretch across the entire viewport
 
 ## Version 
-1.1 - Allows for left-to-right menus not very at top of page
+1.1 Allows for left-to-right menus not very at top of page
+
+1.2 Added two variables to control
+1. A top margin for the top-bar (the distance between the top-bar and the top of the page; use this when, for example, an environment indicator bar is being shown)
+2. A top-bar height (to define where under the top-bar the page content should start; use this when the top-bar is fixed to the top of the page)
 
 # Setup
 
@@ -38,7 +42,6 @@ NOTE: This option will only work if the control is in the first row of the page
 ## Applying the CSS
 The CSS below is required for the correct functioning of the module. Some elements can be [customised](#customising-css) using a variables CSS file. The **background color** of the top bar and the **position of the profile icon** can be changed using the two CSS files in this repo
 
-**Stadium 6.6 or higher**
 1. Create a folder called "CSS" inside of your Embedded Files in your application
 2. Drag the two CSS files from this repo [*top-bar-variables.css*](top-bar-variables.css) and [*top-bar.css*](top-bar.css) into that folder
 3. Paste the link tags below into the *head* property of your application
@@ -49,13 +52,11 @@ The CSS below is required for the correct functioning of the module. Some elemen
 
 ![](images/ApplicationHeadProp.png)
 
-**Versions lower than 6.6**
-1. Copy the CSS from the two css files into the Stylesheet in your application
-
 ## Customising CSS
 1. Open the CSS file called [*top-bar-variables.css*](top-bar-variables.css) from this repo
 2. Adjust the variables in the *:root* element as you see fit
 3. Overwrite the file in the CSS folder of your application with the customised file
+4. Do not change any CSS other than the variables provided in the [*top-bar-variables.css*](top-bar-variables.css) file
 
 ## CSS Upgrading
 To upgrade the CSS in this module, follow the [steps outlined in this repo](https://github.com/stadium-software/samples-upgrading)

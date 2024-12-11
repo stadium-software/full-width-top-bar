@@ -1,6 +1,8 @@
-/* CSS version 1.0 https: //github.com/stadium-software/full-width-top-bar */
+/* CSS version 1.2 https: //github.com/stadium-software/full-width-top-bar */
 :root {
     --stadium-full-top-bar-background-color: #2196f3;
+    --stadium-full-top-bar-top-margin: 0px;
+    --stadium-full-top-bar-fixed-bar-height: 50px;
 
     --stadium-full-top-bar-profile-icon-top-position: 6px;
     --stadium-full-top-bar-profile-icon-right-position: 4px;

@@ -1,4 +1,4 @@
-/* CSS version 1.1 https: //github.com/stadium-software/full-width-top-bar */
+/* CSS version 1.2 https: //github.com/stadium-software/full-width-top-bar */
 #app:has(.stadium-top-bar) {
     .header {
         top: var(--stadium-full-top-bar-profile-icon-top-position, 6px);
@@ -42,11 +42,11 @@
     .container .stack-layout-container:first-child:has(.stadium-top-bar.fixed-top-bar, .fixed-top-bar .stadium-top-bar) {
         position: fixed;
         z-index: 999;
-        top: 0;
+        top: var(--stadium-full-top-bar-top-margin, 0px);
     }
 
     .container:has(.stadium-top-bar.fixed-top-bar) > .stack-layout-container:nth-child(2) {
-        padding-top: var(--stadium-full-top-bar-profile-fixed-top-padding, 60px);
+        padding-top: var(--stadium-full-top-bar-fixed-bar-height, 50px);
     }
 
     .container:has(.stadium-top-bar) > .stack-layout-container:not(:has(.stadium-top-bar)) {
@@ -85,11 +85,11 @@
         .page-content > .stack-layout-container:first-child:has( >  .stadium-top-bar.fixed-top-bar) {
             position: fixed;
             z-index: 999;
-            top: 0;
+            top: var(--stadium-full-top-bar-top-margin, 0px);
         }
 
         .page-content:has(.stadium-top-bar.fixed-top-bar) > .stack-layout-container:nth-child(2) {
-            padding-top: var(--stadium-full-top-bar-profile-fixed-top-padding, 60px);
+            padding-top: var(--stadium-full-top-bar-fixed-bar-height, 50px);
         }
 
         .page-content:has(.stadium-top-bar) > .stack-layout-container {
