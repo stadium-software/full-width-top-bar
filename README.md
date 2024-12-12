@@ -9,6 +9,8 @@ This module allows you to make controls stretch across the entire viewport
 1. A top margin for the top-bar (the distance between the top-bar and the top of the page; use this when, for example, an environment indicator bar is being shown)
 2. A top-bar height (to define where under the top-bar the page content should start; use this when the top-bar is fixed to the top of the page)
 
+1.3 Added a script to cater for the changing height of fixed top bars (e.g. mobile, item wrapping)
+
 # Setup
 
 ## Application Setup
@@ -25,7 +27,29 @@ This module allows you to make controls stretch across the entire viewport
 ## Display Option: Fixed Top Bar
 NOTE: This option will only work if the control is in the first row of the page
 
+### Global Script Setup
+1. Create a Global Script and name it "FixHeaders"
+2. Drag a Javascript action into the script and paste the Javascript below into the action
+3. Do not make any changes to any of this script
+```javascript
+/* Stadium Script v1.3 https://github.com/stadium-software/full-width-top-bar */
+let topBar = document.querySelector(".stadium-top-bar.fixed-top-bar");
+if (topBar) {
+    setTopBarHeight();
+    window.onresize = setTopBarHeight;
+}
+function setTopBarHeight(){
+    let r = document.querySelector(':root');
+    let topBarHeight = topBar.getBoundingClientRect().height;
+    r.style.setProperty('--stadium-full-top-bar-fixed-bar-height', topBarHeight + 'px');
+}
+```
+
+### Page Setup
 1. Adding two classes, "stadium-top-bar" and "fixed-top-bar" to the menu control will cause the top bar stretch and also remain fixed at the top of the page while the remaining content will scroll
+
+### Template.Load or Page.Load
+1. Drag the "FixHeaders" global script into the load event handler of the template or the page where the fixed stadium-top-bar is displayed.
 
 **Example showing a fixed top bar:**
 ![Fixed Top Bar Example](images/fixed-top-bar.gif)
