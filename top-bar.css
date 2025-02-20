@@ -27,7 +27,7 @@
     }
 
     .container .stack-layout-container:has(.stadium-top-bar) {
-        background-color: var(--stadium-full-top-bar-background-color, var(--SECONDARY-THEME-COLOR, #2196f3));
+        background-color: var(--stadium-full-top-bar-background-color, var(--MENU-BACKGROUND-COLOR, #2196f3));
         width: 100%;
         padding-right: 0;
         padding-left: 0;
