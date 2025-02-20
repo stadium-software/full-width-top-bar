@@ -9,7 +9,7 @@ This module allows you to make controls stretch across the entire viewport
     - [Page Setup](#page-setup-1)
     - [Template.Load or Page.Load](#templateload-or-pageload)
   - [Multiple Menu Display (left-aligned \& right-aligned)](#multiple-menu-display-left-aligned--right-aligned)
-  - [Applying the CSS](#applying-the-css)
+  - [CSS](#css)
     - [Before v6.12](#before-v612)
     - [v6.12+](#v612)
     - [Customising CSS](#customising-css)
@@ -57,7 +57,7 @@ This module allows you to make controls stretch across the entire viewport
 **Example showing a split top bar with two menu controls:**
 ![Split Menu Display](images/right-hand-menu.png)
 
-## Applying the CSS
+## CSS
 The CSS below is required for the correct functioning of the module. Some elements can be [customised](#customising-css) using a variables CSS file. For example, the **background color** of the top bar and the **position of the profile icon** can be changed using the [*top-bar-variables.css*](top-bar-variables.css) file in this repo
 
 ### Before v6.12
