@@ -87,6 +87,7 @@ The CSS below is required for the correct functioning of the module. Some elemen
 ```html
 <link rel="stylesheet" href="{EmbeddedFiles}/CSS/top-bar-variables.css">
 ``` 
+5. Stadium 6.12+ users can comment out any variable they do not wish to customise
 
 **NOTE: Do not change any of the CSS in the 'top-bar.css' file**
 
