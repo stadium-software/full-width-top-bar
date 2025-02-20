@@ -18,6 +18,8 @@ This module allows you to make controls stretch across the entire viewport
   - [Global Script Setup](#global-script-setup)
 
 ## Version 
+Current version 1.4
+
 1.1 Allows for left-to-right menus not very at top of page
 
 1.2 Added two variables to control
@@ -25,6 +27,8 @@ This module allows you to make controls stretch across the entire viewport
 2. A top-bar height (to define where under the top-bar the page content should start; use this when the top-bar is fixed to the top of the page)
 
 1.3 Added a script to cater for the changing height of fixed top bars (e.g. mobile, item wrapping)
+
+1.4 Made top bar expand fully when large tables are shown
 
 # Setup
 
