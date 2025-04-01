@@ -31,6 +31,8 @@ Current version 1.4
 
 1.4 Made top bar expand fully when large tables are shown
 
+1.4.1 Changed px to rem; updated readme for 6.12+
+
 # Setup
 
 ## Application Setup
