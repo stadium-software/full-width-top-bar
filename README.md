@@ -16,6 +16,7 @@ This module allows you to make controls stretch across the entire viewport
     - [CSS Upgrading](#css-upgrading)
 - [Display Option: Fixed Top Bar](#display-option-fixed-top-bar)
   - [Global Script Setup](#global-script-setup)
+- [Known Issues](#known-issues)
 
 ## Version 
 Current version 1.4
@@ -118,3 +119,6 @@ function setTopBarHeight(){
     r.style.setProperty('--stadium-full-top-bar-fixed-bar-height', topBarHeight + 'px');
 }
 ```
+
+# Known Issues
+When using this module in conjunction with other modules that fixes elements to the top of the page, the elements will overlap as they are both instructed to occupy the same position. 
